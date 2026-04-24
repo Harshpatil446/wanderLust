@@ -60,7 +60,7 @@ magor-project/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/magor-project.git
+git clone https://github.com/Harshpatil446/magor-project.git
 cd magor-project
 ```
 
