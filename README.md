@@ -119,7 +119,6 @@ Make sure to:
 * 🔐 User authentication (login/signup)
 * ⭐ Reviews and ratings
 * 📍 Location-based search
-* 📱 Responsive design
 
 ---
 
