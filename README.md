@@ -18,17 +18,14 @@ A full-stack web application inspired by Airbnb, where users can explore, create
 
 ### 🏠 Home Page
 
-![Home Page](./screenshots/home.png)
 <img src="./screenshots/home.png" width="700"/>
 
 ### 📄 Listing Details
 
-![Listing Details](./screenshots/show.png)
 <img src="./screenshots/show.png" width="700"/>
 
 ### ➕ Create Listing
 
-![Create Listing](./screenshots/create.png)
 <img src="./screenshots/create.png" width="700"/>
 
 ---
