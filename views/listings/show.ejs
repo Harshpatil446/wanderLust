@@ -43,7 +43,7 @@
                         required></textarea>
                     <div class="invalid-feedback">Please Enter your review</div>
                 </div>
-                <button class="btn btn-outline-dark">submit</button>
+                <button class="btn btn-dark">submit</button>
             </form>
             <hr>
             <p><b>All reviews</b></p>
@@ -60,6 +60,10 @@
                                 <%= review.rating %> stars
                             </p>
                         </div>
+                        <form action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE"
+                            method="post" class="mb-3 ms-3">
+                            <button class="btn btn-sm btn-dark">Delete</button>
+                        </form>
                     </div>
                     <%}%>
             </div>
