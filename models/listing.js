@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const Review = require("./review.js");
+const User = require("./user.js");
 
 
 const listingSchema = new Schema({
@@ -13,8 +14,8 @@ const listingSchema = new Schema({
     },
     image: {
         type: String,
-        default: "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
-        set: (v) => v === "" ? "https://images.unsplash.com/photo-1505691938895-1758d7feb511" : v
+        default: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
+        set: (v) => v === "" ? "https://images.unsplash.com/photo-1470770841072-f978cf4d019e" : v
     },
     price: Number,
     location: String,
@@ -25,7 +26,11 @@ const listingSchema = new Schema({
             ref: "Review"
 
         }
-    ]
+    ],
+    owner: {
+        type: Schema.Types.ObjectId,
+        ref: "User"
+    }
 });
 
 listingSchema.post("findOneAndDelete", async (listing) => {
